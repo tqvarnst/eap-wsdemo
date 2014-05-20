@@ -10,7 +10,7 @@ clone it on github.
 ## Steps to create and build the application
 In this demo we will create a simple websocket demo that will echo your name in a few short steps.
 
-1. Download JBoss EAP 6.3 Beta (or later) from [http://www.jboss.org/products](http://www.jboss.org/products). In this example we will use the zip version and not the installer.
+1. Download JBoss EAP 6.3 Beta (or later) from [http://www.jboss.org/products/eap](http://www.jboss.org/products/eap). In this example we will use the zip version and not the installer.
 
 1. Install JBoss by unzipping in the directory of choice which is listed as `<install-dir>`.
 
