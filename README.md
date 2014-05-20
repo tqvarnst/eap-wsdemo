@@ -12,26 +12,20 @@ In this demo we will create a simple websocket demo that will echo your name in 
 
 1. Download JBoss EAP 6.3 Beta (or later) from [http://www.jboss.org/products](http://www.jboss.org/products). In this example we will use the zip version and not the installer.
 
-1. Install JBoss by unzipping in the directory of choice which is listed as `<install-dir>`.
+1. Install JBoss by unzipping in the directory of choice which is listed as `<install-dir>`.```
+    $ unzip -d <install-dir> jboss-eap-6.3.0.Beta.zip```
 
-``` $ unzip -d <install-dir> jboss-eap-6.3.0.Beta.zip```
-
-2. Start JBoss in standalone mode by running the following commands.
-```
+2. Start JBoss in standalone mode by running the following commands.```
     $ cd <install-dir>/jboss-eap-6.3/bin
-    $ ./standalone.sh
-```
+    $ ./standalone.sh```
 
 3. Open IDE of choice and create a maven project.
 
-4. Edit pom.xml add change package type to `war`.
-```
-    <packaging>war</packaging>
-```
+4. Edit pom.xml add change package type to `war`.```
+    <packaging>war</packaging>```
 
-4. Edit pom.xml add dependencies to
-
-```     <dependencies>
+4. Edit pom.xml add dependencies to ```
+        <dependencies>
             <dependency>
                 <groupId>org.jboss.spec</groupId>
                 <artifactId>jboss-javaee-web-6.0</artifactId>
@@ -45,13 +39,11 @@ In this demo we will create a simple websocket demo that will echo your name in 
                 <version>1.0.0.Final</version>
                 <scope>provided</scope>
             </dependency>
-        </dependencies>
-```
+        </dependencies>```
 
 5. Create a java class named `org.jboss.as.demo.wsdemo.endpoints.HelloEndpoint`
 
-5. Edit the java class to look like this:
-```
+5. Edit the java class to look like this: ```
 package org.jboss.as.demos.wsdemo.endpoints;
 
 import javax.websocket.*;
@@ -76,13 +68,7 @@ public class HelloEndpoint {
         System.out.println("Closing a WebSocket due to " + reason.getReasonPhrase());
     }
 
-}
-
-```
+}```
 
 5. Make sure that the project builds correctly by running `mvn clean package`
 
-6. 
-
-7. kör
-    mvn jboss-as:execute-commands
